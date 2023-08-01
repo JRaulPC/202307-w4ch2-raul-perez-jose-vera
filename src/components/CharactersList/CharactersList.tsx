@@ -1,15 +1,13 @@
+import characters from "../../data/CharacterData";
+import CharacterCard from "../CharacterCard/CharacterCard";
 import "./CharactersList.css";
 
 const CharactersList = (): React.ReactElement => {
-  const testsArrayForTeamPurposes = [1, 2, 4, 5];
-
   return (
     <ul className="characters-list">
-      {testsArrayForTeamPurposes.map((test) => (
-        <li key={test} className="character-list_character">
-          {test}
-        </li>
-      ))}
+      <li className="character-list_character">
+        <CharacterCard character={characters[0]} />
+      </li>
     </ul>
   );
 };

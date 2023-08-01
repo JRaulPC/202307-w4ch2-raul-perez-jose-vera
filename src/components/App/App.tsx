@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import CharactersData from "../../types";
+import CharactersList from "../CharactersList/CharactersList";
 
 const App = (): React.ReactElement => {
   const [characters, setCharacters] = useState<CharactersData[]>([]);
@@ -14,7 +15,11 @@ const App = (): React.ReactElement => {
     })();
   }, [characters]);
 
-  return <div className="app"></div>;
+  return (
+    <div className="app">
+      <CharactersList />
+    </div>
+  );
 };
 
 export default App;

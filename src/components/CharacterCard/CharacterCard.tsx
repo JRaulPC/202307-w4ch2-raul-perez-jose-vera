@@ -1,11 +1,11 @@
 import { type CharacterData } from "../../data/types";
 
 interface CharacterCardProps {
-  characters: CharacterData;
+  character: CharacterData;
 }
 
 const CharacterCard = ({
-  characters: { name, imageUrl, height, mass, created },
+  character: { name, imageUrl, height, mass, created },
 }: CharacterCardProps): React.ReactElement => {
   return (
     <article>
