@@ -1,13 +1,23 @@
-import characters from "../../data/CharacterData";
+import CharactersData from "../../types";
 import CharacterCard from "../CharacterCard/CharacterCard";
 import "./CharactersList.css";
 
-const CharactersList = (): React.ReactElement => {
+interface CharacterListProps {
+  charactersList: CharactersData[];
+}
+
+const CharactersList = (
+  charactersList: CharacterListProps,
+): React.ReactElement => {
   return (
     <ul className="characters-list">
-      <li className="character-list_character">
-        <CharacterCard character={characters[0]} />
-      </li>
+      {charactersList.charactersList.map((character, i) => {
+        return (
+          <li key={i}>
+            <CharacterCard character={character} />
+          </li>
+        );
+      })}
     </ul>
   );
 };
