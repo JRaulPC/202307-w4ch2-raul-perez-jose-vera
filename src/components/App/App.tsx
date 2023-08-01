@@ -3,7 +3,8 @@ import CharactersData from "../../types";
 import CharactersList from "../CharactersList/CharactersList";
 
 const App = (): React.ReactElement => {
-  const [, setCharacters] = useState<CharactersData[]>([]);
+  const [characters, setCharacters] = useState<CharactersData[]>([]);
+
   useEffect(() => {
     (async () => {
       const response = await fetch(
@@ -16,7 +17,7 @@ const App = (): React.ReactElement => {
 
   return (
     <div className="app">
-      <CharactersList />
+      <CharactersList charactersList={characters} />
     </div>
   );
 };
