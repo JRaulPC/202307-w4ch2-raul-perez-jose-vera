@@ -1,5 +1,11 @@
+import CharactersList from "../CharactersList/CharactersList";
+
 const App = () => {
-  return <div></div>;
+  return (
+    <div>
+      <CharactersList />
+    </div>
+  );
 };
 
 export default App;
