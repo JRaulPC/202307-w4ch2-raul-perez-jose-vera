@@ -16,8 +16,8 @@ const CharacterCard = ({
         alt={`The Star Wars character of the ${name} of the first three movies`}
       />
       <ul className="character-atributes">
-        <li>{height} Cm</li>
-        <li>{mass} Kg</li>
+        <li>Altura: {height} Cm</li>
+        <li>Peso: {mass} Kg</li>
         <li>It was created on {created.slice(0, 10)}</li>
       </ul>
     </article>
