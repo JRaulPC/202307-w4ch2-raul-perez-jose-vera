@@ -1,10 +1,13 @@
 import { useEffect, useState } from "react";
 import CharactersData from "../../types";
+import Button from "../ButtonComponent/ButtonComponent";
 import CharactersList from "../CharactersList/CharactersList";
 import "./App.css";
 
 const App = (): React.ReactElement => {
   const [characters, setCharacters] = useState<CharactersData[]>([]);
+
+  const resetHeigt = () => {};
 
   useEffect(() => {
     (async () => {
@@ -19,6 +22,7 @@ const App = (): React.ReactElement => {
   return (
     <div className="app">
       <h1 className="title">STAR WARS CHARACTERS</h1>
+      <Button text="Reset Height" actionOnClick={resetHeigt} />
       <CharactersList charactersList={characters} />
     </div>
   );
