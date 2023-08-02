@@ -1,6 +1,6 @@
 interface CharactersData {
   name: string;
-  img: string;
+  imgUrl: string;
   height: string;
   mass: string;
   created: string;

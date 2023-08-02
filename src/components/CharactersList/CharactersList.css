@@ -1,9 +1,20 @@
 .characters-list {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 10px;
   min-height: 100vh;
   gap: 50px;
+  padding-right: 40px;
+  margin: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .characters-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+  }
 }
