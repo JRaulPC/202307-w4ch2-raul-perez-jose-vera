@@ -1,4 +1,5 @@
 interface CharactersData {
+  id: number;
   name: string;
   imgUrl: string;
   height: string;
