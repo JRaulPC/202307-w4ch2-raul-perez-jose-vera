@@ -7,8 +7,6 @@ import "./App.css";
 const App = (): React.ReactElement => {
   const [characters, setCharacters] = useState<CharactersData[]>([]);
 
-  const resetHeigt = () => {};
-
   useEffect(() => {
     (async () => {
       const response = await fetch(
@@ -19,10 +17,14 @@ const App = (): React.ReactElement => {
     })();
   }, []);
 
+  const resetHeight = () => {};
+
   return (
     <div className="app">
       <h1 className="title">STAR WARS CHARACTERS</h1>
-      <Button text="Reset Height" actionOnClick={resetHeigt} />
+      <div>
+        <Button text="Reset Height" actionOnClick={resetHeight} />
+      </div>
       <CharactersList charactersList={characters} />
     </div>
   );
