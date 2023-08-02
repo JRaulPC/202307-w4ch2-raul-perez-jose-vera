@@ -2,7 +2,7 @@ interface Character {
   id: number;
   name: string;
   imgUrl: string;
-  height: number;
+  height: string;
   mass: string;
   created: string;
 }
