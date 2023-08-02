@@ -4,6 +4,10 @@
   flex-direction: column;
   padding: 15px;
   text-align: center;
+  align-items: center;
+  border: solid 3px rgb(228, 228, 62);
+  border-radius: 10%;
+  overflow: hidden;
 }
 
 .character-name {
@@ -18,15 +22,12 @@
   display: flex;
   justify-content: center;
   flex-direction: inherit;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 @media screen and (min-width: 768px) {
-  .characters-list {
-    display: grid;
-    flex-direction: row;
-    grid-template-columns: repeat(2, 1fr);
-    width: 100%;
-    min-height: 100vh;
+  .character {
+    margin: 0px;
+    padding: 20px;
   }
 }

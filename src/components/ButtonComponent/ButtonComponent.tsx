@@ -1,3 +1,5 @@
+import "./ButtonComponent.css";
+
 interface ButtonProps {
   text: string;
   actionOnClick: () => void;
@@ -5,7 +7,7 @@ interface ButtonProps {
 
 const Button = ({ text, actionOnClick }: ButtonProps): React.ReactElement => {
   return (
-    <button className="button" onClick={actionOnClick}>
+    <button className="button-card button-reset" onClick={actionOnClick}>
       {text}
     </button>
   );
