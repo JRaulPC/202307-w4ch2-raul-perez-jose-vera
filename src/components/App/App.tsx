@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Character from "../../types";
+import Button from "../ButtonComponent/ButtonComponent";
 import CharactersList from "../CharactersList/CharactersList";
 import "./App.css";
 
@@ -16,9 +17,14 @@ const App = (): React.ReactElement => {
     })();
   }, []);
 
+  const resetHeight = () => {};
+
   return (
     <div className="app">
       <h1 className="title">STAR WARS CHARACTERS</h1>
+      <div>
+        <Button text="Reset Height" actionOnClick={resetHeight} />
+      </div>
       <CharactersList charactersList={characters} />
     </div>
   );
