@@ -1,4 +1,4 @@
-interface CharactersData {
+interface Character {
   id: number;
   name: string;
   imgUrl: string;
@@ -7,4 +7,4 @@ interface CharactersData {
   created: string;
 }
 
-export default CharactersData;
+export default Character;
