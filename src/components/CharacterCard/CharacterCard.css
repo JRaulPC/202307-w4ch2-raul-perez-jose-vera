@@ -1,0 +1,31 @@
+.character {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding: 15px;
+  text-align: center;
+}
+
+.character-name {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 30px;
+  color: rgb(228, 228, 62);
+}
+
+.character-atributes {
+  display: flex;
+  justify-content: center;
+  flex-direction: inherit;
+  font-size: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .characters-list {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 100vh;
+  }
+}

@@ -1,20 +1,20 @@
-import { type CharacterData } from "../../data/types";
+import CharacterData from "../../types";
+import "./CharacterCard.css";
 
 interface CharacterCardProps {
   character: CharacterData;
 }
 
 const CharacterCard = ({
-  character: { name, imageUrl, height, mass, created },
+  character: { name, height, mass, created },
 }: CharacterCardProps): React.ReactElement => {
   return (
-    <article>
-      <h2>{name}</h2>
-      <img src={imageUrl} alt={`${name} star wars character `} />
-      <ul>
-        <li>{height}</li>
-        <li>{mass}</li>
-        <li>{created}</li>
+    <article className="character">
+      <h2 className="character-name">{name}</h2>
+      <ul className="character-atributes">
+        <li>{height} Cm</li>
+        <li>{mass} Kg</li>
+        <li>It was created on {created}</li>
       </ul>
     </article>
   );
