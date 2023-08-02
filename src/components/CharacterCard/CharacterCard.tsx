@@ -6,11 +6,15 @@ interface CharacterCardProps {
 }
 
 const CharacterCard = ({
-  character: { name, height, mass, created },
+  character: { id, name, height, mass, created },
 }: CharacterCardProps): React.ReactElement => {
   return (
     <article className="character">
       <h2 className="character-name">{name}</h2>
+      <img
+        src={`https://starwars-visualguide.com/assets/img/characters/${id}.jpg`}
+        alt={`The Star Wars character of the ${name} of the first three movies`}
+      />
       <ul className="character-atributes">
         <li>{height} Cm</li>
         <li>{mass} Kg</li>
