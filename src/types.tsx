@@ -3,7 +3,7 @@ interface Character {
   name: string;
   imgUrl: string;
   height: string;
-  mass: number;
+  mass: string;
   created: string;
 }
 
