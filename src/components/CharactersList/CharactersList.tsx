@@ -1,9 +1,9 @@
-import CharactersData from "../../types";
+import Character from "../../types";
 import CharacterCard from "../CharacterCard/CharacterCard";
 import "./CharactersList.css";
 
 interface CharacterListProps {
-  charactersList: CharactersData[];
+  charactersList: Character[];
 }
 
 const CharactersList = (
