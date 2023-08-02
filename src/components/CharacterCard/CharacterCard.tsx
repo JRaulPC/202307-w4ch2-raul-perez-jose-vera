@@ -18,7 +18,7 @@ const CharacterCard = ({
       <ul className="character-atributes">
         <li>{height} Cm</li>
         <li>{mass} Kg</li>
-        <li>It was created on {created}</li>
+        <li>It was created on {created.slice(0, 10)}</li>
       </ul>
     </article>
   );
