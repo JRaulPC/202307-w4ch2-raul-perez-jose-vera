@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React from "react";
 import CharacterData from "../../types";
 import Button from "../ButtonComponent/ButtonComponent";
 import "./CharacterCard.css";
@@ -10,10 +10,14 @@ interface CharacterCardProps {
 const CharacterCard = ({
   character: { id, name, height, mass, created },
 }: CharacterCardProps): React.ReactElement => {
-  const [massValue, setMassValue] = useState(mass);
+  const initialMassValue = parseInt(mass);
+  const [massValue, setMassValue] = React.useState<number>(initialMassValue);
 
   const incrementNumber = () => {
-    setMassValue((massValue) => (massValue += 1));
+    if (massValue === 500) {
+      return;
+    }
+    setMassValue((massValue) => massValue + 1);
   };
 
   const decrementNumber = () => {
