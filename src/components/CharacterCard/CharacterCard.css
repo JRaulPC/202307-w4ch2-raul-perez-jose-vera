@@ -9,6 +9,11 @@
   border-radius: 10%;
   overflow: hidden;
 }
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 
 .character-name {
   display: flex;
