@@ -10,7 +10,7 @@
   border-color: rgb(192, 192, 59);
   background-color: rgb(231, 211, 96);
   overflow: hidden;
-  font-family: "Lexend Deca", sans-serif;
+  font-family: "Lexend Deca", "sans-serif";
   margin-bottom: 10px;
   cursor: pointer;
 }

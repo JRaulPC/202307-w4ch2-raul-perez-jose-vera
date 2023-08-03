@@ -17,7 +17,13 @@ const App = (): React.ReactElement => {
     })();
   }, []);
 
-  const resetHeight = () => {};
+  const resetHeight = () => {
+    const resetCharactersHeight = characters.map((character) => ({
+      ...character,
+      height: "0",
+    }));
+    setCharacters(resetCharactersHeight);
+  };
 
   return (
     <div className="app">
