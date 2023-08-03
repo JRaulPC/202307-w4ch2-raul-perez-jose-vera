@@ -1,4 +1,4 @@
-.button-reset {
+.button-card {
   display: flex;
   padding: 10px;
   flex-direction: column;
@@ -6,20 +6,20 @@
   align-items: center;
   justify-content: center;
   width: 65px;
-  height: 65px;
+  height: 40px;
   border-color: rgb(192, 192, 59);
   background-color: rgb(231, 211, 96);
   overflow: hidden;
-  font-family: "Lexend Deca", sans-serif;
+  font-family: "Lexend Deca", "sans-serif";
   margin-bottom: 10px;
   cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
-  .button-reset {
+  .button-card {
     display: flex;
     flex-direction: row;
-    width: 80px;
-    height: 80px;
+    width: 65px;
+    height: 40px;
   }
 }
