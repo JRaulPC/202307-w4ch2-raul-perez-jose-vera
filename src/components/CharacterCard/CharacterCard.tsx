@@ -14,10 +14,10 @@ const CharacterCard = ({
   const [massValue, setMassValue] = React.useState<number>(initialMassValue);
 
   const incrementNumber = () => {
-    if (massValue === 500) {
+    if (massValue === 200) {
       return;
     }
-    setMassValue((massValue) => massValue + 1);
+    setMassValue((massValue) => (massValue += 1));
   };
 
   const decrementNumber = () => {
@@ -32,7 +32,7 @@ const CharacterCard = ({
       <h2 className="character-name">{name}</h2>
       <img
         src={`https://starwars-visualguide.com/assets/img/characters/${id}.jpg`}
-        alt={`The Star Wars character of the ${name} of the first three movies`}
+        alt={`The Star Wars character ${name}, of the first three movies`}
       />
       <ul className="character-atributes">
         <li>Altura: {height} Cm</li>
